@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "File preparation..."
+echo "...File preparation..."
 
 directory_to_exclude="./dist"
 
@@ -13,11 +13,11 @@ else
     echo "Directory created: $directory_to_exclude"
 fi
 
-echo "Build process..."
+echo "...Build process..."
 python3 -m build
 
 
-echo "Upload process..."
+echo "...Upload process..."
 # Check if the build command was successful
 if [ $? -eq 0 ]; then
     # Set the maximum number of upload retries
