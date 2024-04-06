@@ -11,7 +11,7 @@ def unpack_nested_lists(nlst, mode="comprehension"):
                 item 
                 for sublist in nlst 
                 for item in (
-                    unpack_nested_lists(sublist) 
+                    unpack_nested_lists(sublist, mode="comprehension")
                     if isinstance(sublist, list)
                     else [sublist]
                     )

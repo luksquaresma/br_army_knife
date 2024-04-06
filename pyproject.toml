@@ -1,0 +1,25 @@
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project]
+name = "br_army_knife"
+version = "0.0.1"
+authors = [
+  { name="Lucas Quaresma", email="lucas.quaresma1@gmail.com" },
+]
+description = "Under construction. Common utilities tools in python."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/luksquaresma/br_army_knife"
+Issues = "https://github.com/luksquaresma/br_army_knife/issues"
+
+
+
