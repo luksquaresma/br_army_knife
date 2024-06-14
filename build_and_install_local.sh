@@ -3,6 +3,9 @@ echo "...File preparation..."
 
 directory_to_exclude="./dist"
 
+python3 -m pip install build --break-system-packages
+sudo python3 -m pip install build --break-system-packages
+
 {
     # Check if the directory exists
     if [ -d "$directory_to_exclude" ]; then
@@ -16,7 +19,9 @@ directory_to_exclude="./dist"
 } && {
     echo "...Build process..."
     python3 -m build
+    sudo python3 -m build
 } && {
     echo "...Local install process..."
     pip install -e . --break-system-packages
+    sudo pip install -e . --break-system-packages
 }

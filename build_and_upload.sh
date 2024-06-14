@@ -3,6 +3,8 @@ echo "...File preparation..."
 
 directory_to_exclude="./dist"
 
+python3 -m pip install build
+
 # Check if the directory exists
 if [ -d "$directory_to_exclude" ]; then
     # Remove all contents of the directory

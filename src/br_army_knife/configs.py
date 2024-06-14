@@ -6,8 +6,6 @@ def local_jupyter_notebook_bash():
     {
         {
             echo; echo "...Starting Jupyter Notebooks Git Configuration..."
-        } && {
-            echo; sudo --validate --stdin   
         }
     } && {
         {
@@ -31,6 +29,6 @@ def local_jupyter_notebook_bash():
     with open("./config_j_notebooks.sh", 'w') as file:
         file.write(local_bash_file)
 
-    os.system('sudo --validate --stdin && sudo chmod +x ./config_j_notebooks.sh && sudo bash ./config_j_notebooks.sh; sudo rm ./config_j_notebooks.sh')
+    os.system('sudo --validate --stdin && sudo chmod +x ./config_j_notebooks.sh && sudo bash ./config_j_notebooks.sh && bash ./config_j_notebooks.sh; sudo rm ./config_j_notebooks.sh')
 
 
