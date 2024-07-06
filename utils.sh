@@ -42,5 +42,3 @@ iterate_version_toml() {
         exit 1
     fi
 }
-
-# (iterate_version_toml pyproject_copy.toml)

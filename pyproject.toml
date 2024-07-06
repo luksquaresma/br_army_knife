@@ -4,7 +4,7 @@ build-backend = "pdm.backend"
 
 [project]
 name = "br_army_knife"
-version = "0.0.6"
+version = "0.0.7"
 authors = [
   { name="Lucas Quaresma", email="lucas.quaresma1@gmail.com" },
 ]
